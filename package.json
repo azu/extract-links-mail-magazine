@@ -10,7 +10,7 @@
     "src/"
   ],
   "name": "extract-links-mail-magazine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract link in mail magazine like JavaScript Weekly.",
   "main": "lib/extract-links-mail-magazine.js",
   "bin": {
