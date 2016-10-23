@@ -10,6 +10,7 @@ const defaultBlackList = [
     /forward-to-friend\.com/,
     /campaign-archive.com/,
     /campaign-archive\d+.com/,
+    /typeform\.com/,
     // share
     /^https?:\/\/twitter.com\/intent\//,
     /^https?:\/\/www.facebook.com\/sharer\//,
@@ -17,6 +18,8 @@ const defaultBlackList = [
 ];
 
 const defaultBlockTitleList = [
+    /\(PR\)/,
+    /\[PR\]/,
     /^こちら$/
 ];
 const hasNotTextSibling = (prev, next)=> {
