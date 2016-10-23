@@ -47,6 +47,7 @@
   "dependencies": {
     "array-unique": "^0.3.2",
     "jsdom": "^9.8.0",
+    "map-like": "^1.0.3",
     "strip-utm": "^1.0.0"
   }
 }
