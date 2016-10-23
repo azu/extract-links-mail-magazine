@@ -24,7 +24,7 @@ jsdom.env(
         if (err) {
             throw error;
         }
-        const links = extractItemLinks(window.URL, window.document);
+        const links = extractLinks(window.location.href, window.document);
         /*
         [
             'http://thenewstack.io/javascript-grows-gets-foundation',
