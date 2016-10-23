@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Weekly Issue 306: October 20, 2016</title>
+  <meta name="description" content="JavaScript Gets Its Own Foundation, An ES Proposal: Asynchronous Iteration, Node.js v6 Transitions to LTS, MySQL on Compose - hosted on AWS, GCP or SoftLayer, The ECMAScript 2016 Change You Probably Don't Know, and more.">
+  <link rel="stylesheet" href="/assets/app-a1964a09e0cc118360ff8ef58b48f025.css">
+  <link rel="alternate" type="application/rss+xml" title="JavaScript Weekly" href="/rss/207b3481" />
+  <link rel="stylesheet" href="/stylesheets/jw.css">
+  
+  <meta name="csrf-token" content="6QFMLAyqOc0k0aG1OkzbDqkdVTaSOiuqV5kXYiaKVkY=">
+  
+  <script src="/jquery.min.js"></script>
+</head>
+<body class="jw dom dom-jw issues 306 jw issue">
+  <div class="containerweb">
+    <header>
+          <nav class="pub_nav">
+    <div class="sitename" style="cursor: pointer" onclick="window.location.href='/'"><a href="/">JavaScript Weekly</a></div>
+
+    <div class="items">
+    
+    <a href="/issues" class="issues">Archives</a><span class="divider">|</span>
+    <a href="/search" class="search">Search</a><span class="divider">|</span>
+    <a href="/latest" class="latest">Latest Issue</a><span class="divider">|</span>
+    <a href="/rss/1jo371pj">RSS</a>
+    </ul>
+    </div>
+  </nav>
+
+  
+
+    </header>
+    <main>
+
+<!-- %= pub_partial :subscribe_box % -->
+
+<div class="floatingsearch"><form class="search" method="get" action="/search">
+<input type="text" class="q" name="q" value=""  placeholder="Search" size="20" />
+<input type="hidden" name="pub" value="jw" />
+<button class="submit awesome">Search</button>
+</form>
+</div>
+
+<h1><a href="/issues" style="text-decoration: underline">Issues</a> &raquo; 306</h1>
+
+<div class="nomobile"><div class="subscribe_box" class="">
+<form class="subscribe" action="/subscribe" method="POST">
+  <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+  <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+  <input type="hidden" name="_csrf" value="6QFMLAyqOc0k0aG1OkzbDqkdVTaSOiuqV5kXYiaKVkY=" />
+</form>
+</div>
+</div>
+
+<div class="issue-html"><table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family: 'helvetica neue', helvetica, arial, sans-serif; font-size: 14px; line-height: 20px; color: #333"><tr><td align="center" valign="top">
+<table border="0" width="670" cellpadding="0" cellspacing="0" class="container noarchive" style="border-collapse: collapse;"><tr><td style="padding-top: 6px; padding-bottom: 6px; font-size: 11px; text-align: center; color: #555; font-family: verdana, arial, sans-serif">
+<span class="nomo">This week's JavaScript news</span> — <a target="_blank" href="http://javascriptweekly.com/issues/306" style="color: #0081b5">Read this e-mail on the Web</a>
+</td></tr></table>
+<table border="0" width="670" cellpadding="0" cellspacing="0" class="container" style="border-collapse: collapse">
+<tr><td style="background-color: #f7df1e"><table width="100%" cellspacing="0" cellpadding="0" align="left"><tr><td align="left" class="block" style="padding: 6px 12px;">
+<table align="left" width="50%" class="gowide"><tr><td><span style="line-height: 36px; font-size: 23px; color: #f7df1e; font-weight: bold; color: #323330">JavaScript Weekly</span></td></tr></table>
+<table align="left" style="text-align: right" width="50%" class="gowide lonmo"><tr><td><span style="font-size: 14px; line-height: 36px; font-weight: normal; color: #323330">
+Issue 306 — October 20, 2016
+</span></td></tr></table>
+</td></tr></table></td></tr>
+<tr><td style="padding: 16px 12px 12px 12px" align="left">
+<div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://thenewstack.io/javascript-grows-gets-foundation/?utm_source=javascriptweekly&amp;utm_medium=email" title="thenewstack.io/javascript-grows-gets-foundation/" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">JavaScript Gets Its Own Foundation</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">At OSCON last week, the jQuery Foundation announced its renaming to the <a target="_blank" href="https://js.foundation/">JS Foundation</a>, an entity <em>“committed to creating a center of gravity within the exponentially expanding JS ecosystem”</em>. Its <a target="_blank" href="https://js.foundation/projects/">projects</a> include ESLint, jQuery and Webpack.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+The New Stack
+</div>
+<br clear="all" style="clear: both"><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://www.2ality.com/2016/10/asynchronous-iteration.html?utm_source=javascriptweekly&amp;utm_medium=email" title="www.2ality.com/2016/10/asynchronous-iteration.html" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">An ES Proposal: Asynchronous Iteration</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Dr. Axel explains another potential addition to JavaScript: <a target="_blank" href="https://github.com/tc39/proposal-async-iteration">asynchronous iteration</a>. He also shows how you can use it now via Babel.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Dr. Axel Rauschmayer
+</div>
+<br clear="all" style="clear: both"><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://medium.com/@nodejs/node-js-v6-transitions-to-lts-be7f18c17159?utm_source=javascriptweekly&amp;utm_medium=email" title="medium.com/@nodejs/node-js-v6-transitions-to-lts-be7f18c17159" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">Node.js v6 Transitions to LTS</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Three major updates for Node this month, with v7 set to become the new ‘current’ release line, v6 transitioning to LTS, and v0.10 reaching its ‘end of life’ with no patches at all beyond October.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Node.js Foundation
+</div>
+<br clear="all" style="clear: both"><a target="_blank" href="https://compose.com/articles/connecting-to-compose-for-mysql/?utm_source=cooper&amp;utm_medium=newsletter&amp;utm_content=connect-mysql"><img src="https://copm.s3.amazonaws.com/f5c6eef4.png" style="border: 0px solid #bbbbbb" width="77" align="right" height="100" alt="Compose"></a><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://compose.com/articles/connecting-to-compose-for-mysql/?utm_source=cooper&amp;utm_medium=newsletter&amp;utm_content=connect-mysql" title="compose.com/articles/connecting-to-compose-for-mysql/?utm_source=cooper&amp;utm_medium=newsletter&amp;utm_content=connect-mysql" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">MySQL on Compose - hosted on AWS, GCP or SoftLayer</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Get the most from your favorite RDBMS with 3 Node HA, Daily Backup and Auto-scaling. See how easy it is to connect your Database, hassle-free.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Compose
+  <span style="background-color: #f7df1e; color: #ffffff; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsor</span>
+</div>
+<br clear="all" style="clear: both"><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://www.nczonline.net/blog/2016/10/the-ecmascript-2016-change-you-probably-dont-know/?utm_source=javascriptweekly&amp;utm_medium=email" title="www.nczonline.net/blog/2016/10/the-ecmascript-2016-change-you-probably-dont-know/" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">The ECMAScript 2016 Change You Probably Don't Know</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">No, it’s not the exponentiation operator, or <code>Array.prototype.includes()</code>, it’s that <code>"use strict"</code> can’t be used in functions with non-simple parameter lists.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Nicholas C. Zakas
+</div>
+<br clear="all" style="clear: both"><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://toddmotto.com/angular-2-forms-reactive?utm_source=javascriptweekly&amp;utm_medium=email" title="toddmotto.com/angular-2-forms-reactive" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">Angular 2 Form Fundamentals: Reactive Forms</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Angular 2 presents two different methods for creating forms, template-driven (as used in Angular 1.x) or reactive. Todd digs into the latter.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Todd Motto
+</div>
+<br clear="all" style="clear: both"><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://www.sitepoint.com/yarn-vs-npm/?utm_source=javascriptweekly&amp;utm_medium=email" title="www.sitepoint.com/yarn-vs-npm/" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">Yarn vs npm: Everything You Need to Know</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Is package manager fatigue soon to become a thing? Tim Severien summarizes everything you need to know and compares Yarn to io.js.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Sitepoint
+</div>
+<br clear="all" style="clear: both"><div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://www.sitepoint.com/jquery-document-ready-plain-javascript/?utm_source=javascriptweekly&amp;utm_medium=email" title="www.sitepoint.com/jquery-document-ready-plain-javascript/" style="display: block; color: #0081b5; line-height: 24px; text-decoration: underline; font-weight: normal">Replacing jQuery's ready() with Plain JavaScript</a></div>
+<div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Julian Motz takes a look at jQuery’s document.ready() method and shows a more vanilla JS approach.</div>
+<div style="color: #999999; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+Sitepoint
+</div>
+<br clear="all" style="clear: both"><p style="color: #666666; font-size: 16px; font-weight: bold; margin-top: 8px; margin-bottom: 10px; text-transform: uppercase">Jobs <!-- a href="https://hired.com/?utm_source=newsletters&amp;utm_medium=petercooperpress&amp;utm_term=cat-tech-javascript&amp;utm_campaign=q2-16-jsweekly"><img src="http://s3.cooperpress.com.s3.amazonaws.com/hired1.png" valign="middle" align="right" alt="Supported by Hired.com" height="26"></a --></p>
+<ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+<li style="color: #f7df1e; margin-bottom: 10px; font-size: 15px; line-height: 17px">
+<a target="_blank" href="http://booking.cooperpress.com/jobs?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 18px; font-weight: normal">Promote Your Job to 106,403 JavaScript Weekly Readers</a><span style="font-size: 12px; color: #666666">Learn how to get your job listing in front of as many JavaScript developers as possible.</span> <span style="color: #999999; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Cooper Press</span>
+</li>
+<li style="color: #f7df1e; margin-bottom: 10px; font-size: 15px; line-height: 17px">
+<a target="_blank" href="http://hired.com/?utm_source=newsletters&amp;utm_medium=petercooperpress&amp;utm_campaign=q4-16-javascriptweekly" style="color: #0081b5; margin-right: 4px; line-height: 18px; font-weight: normal">Find Your Perfect Fit - Try Hired</a><span style="font-size: 12px; color: #666666">Sick of pushy recruiters, and dead end interviews? Try Hired to hear from top tier companies, and only talk to relevant companies.</span> <span style="color: #999999; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Hired</span>
+</li>
+</ul>
+<!-- p style="color: #333; font-size: 11px; font-weight: normal; margin-top: 0px; margin-bottom: 10px">Can't find the right job? Want companies to apply to <em>you?</em> <a target="_blank" href="https://hired.com/?utm_source=newsletters&amp;utm_medium=petercooperpress&amp;utm_term=cat-tech-javascript&amp;utm_campaign=q2-16-jsweekly" style="color: #666666">Try Hired.com.</a></p --><p style="color: #666666; font-size: 16px; font-weight: bold; margin-top: 24px; margin-bottom: 10px; text-transform: uppercase">In brief</p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://js.foundation/announcements/2016/10/17/Linux-Foundation-Unites-JavaScript-Community-Open-Web-Development/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">The Linux Foundation Unites JavaScript Community for Open Web Development</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">JS Foundation</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://medium.com/google-developer-experts/angular-2-new-features-in-angular-2-1-94132b1888f0?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">A Quick Review of New Features in Angular 2.1</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Gerard Sans</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="http://emberjs.com/blog/2016/10/17/ember-2-9-released.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Ember.js 2.8-LTS, 2.9 and 2.10 Beta Released</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif"></span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://github.com/facebook/jsx/issues/65?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Facebook Wants Your Input for JSX 2.0</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Facebook</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://github.com/mozilla/addons-linter/issues/1000?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Angular 1.x Banned From Use in Firefox Addons</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px">Martin Probst of Google notes that <em>“We believe this is likely a misunderstanding”</em>. Updates to follow.</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Mozilla</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://developer.chrome.com/devsummit?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Chrome Dev Summit 2016</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px">Chrome Dev Summit 2016 will take place at the SFJAZZ Center in San Francisco, CA on November 10-11. Join Chrome VP Darin Fisher for two full days of announcements and talks from the Chrome team. Register now with code <code>JAVASCRIPTWEEKLY</code></span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Google Inc.  <span style="background-color: #f7df1e; color: #ffffff; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsor</span></span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="http://thejsguy.com/2016/10/15/a-practical-introduction-to-es6-generator-functions.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">A Practical Introduction to ES6 Generator Functions</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">David Tang</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://engineering.haus.com/dumb-es6-tricks-53ecadd1b29f?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Some Simple ES6 Syntax Tricks</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Emil Ong</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="http://blog.wolksoftware.com/contributing-to-definitelytyped?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">How to Create Your Own TypeScript Type Definition Files (.d.ts)</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px">A very thorough tutorial.</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Wolk Software Engineering</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://daveceddia.com/visual-guide-to-state-in-react/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">A Visual Guide to State in React</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Dave Ceddia</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://blog.risingstack.com/async-await-node-js-7-nightly/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Experimenting with async/await in Node.js 7 Nightly</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #6ca629; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">node</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Gergely Nemeth</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="http://alistapart.com/article/javascript-for-web-designers?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">JavaScript for Web Designers: DOM Scripting</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Mat Marquis</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://hackernoon.com/using-yarn-with-docker-c116ad289d56?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Using Yarn with Docker</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Martino Fornasa</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="http://thenewcode.com/1152/Search-JavaScript-Arrays-Efficiently-with-includes-and-indexOf?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Searching JavaScript Arrays Efficiently with includes and indexOf</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Dudley Storey</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://www.sitepoint.com/javascript-3d-minecraft-editor/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Building a 3D Minecraft-Style Editor in JavaScript</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Christopher Pitt</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://emberigniter.com/modern-bridge-ember-and-rails-5-with-json-api/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Ember and Rails 5 with JSON API: A Modern Bridge</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Ember Igniter</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="http://www.theodo.fr/blog/2016/10/medium-like-image-loading-with-vue-js/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Medium-Like Image Loading with Vue.js</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Louis Zawadzki</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Polymer Summit 2016: Recordings of All Talks Are Now Available</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #cc00cc; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">video</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px">Catch up now on all talks from Polymer Summit 2016.</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Google</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://medium.com/@alexnm/is-mvc-dead-for-the-frontend-35b4d1fe39ec?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Is MVC Dead for The Frontend?</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Alex Moldovan</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://hackernoon.com/why-you-shouldnt-use-var-anymore-f109a58b9b70?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Why You Shouldn’t Use ‘var’ Anymore</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px">And how ‘let’ solves a common JavaScript “gotcha”…</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Mark Brouch</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://sentry.io/for/javascript/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Debugging JS errors in production</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #bbbbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tools</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px"><a target="_blank" href="https://github.com/getsentry/sentry">100% open source</a> tool for catching errors, even if they're minified. Plugins for React, Vue, &amp; Angular 1 or 2.</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Sentry  <span style="background-color: #f7df1e; color: #ffffff; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsor</span></span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://github.com/moinism/faltu?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Faltu: Search Sort, Filter, and Limit An Array of Objects in MongoDB-esque Style</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Moin Uddin</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://maxwellito.github.io/vivus/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">Vivus.js: Bring SVGs to Life by 'Drawing' Them via Animations</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">maxwellito</span></p>
+<p style="color: #f7df1e; margin-bottom: 14px; font-size: 16px; line-height: 18px"><a target="_blank" href="https://github.com/usdivad/mesing?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0081b5; margin-right: 4px; line-height: 20px; font-weight: normal %&gt;">meSing.js: JavaScript Singing Synthesis Library</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <br><span style="font-size: 13px; color: #444444; line-height: 19px">With a <a target="_blank" href="http://usdivad.com/mesing/">demo here.</a></span><br><span style="color: #999999; font-weight: normal; font-size: 12px; line-height: 18px; text-transform: uppercase; font-family: verdana, arial, sans-serif">David Su</span></p>
+</td></tr>
+<tr><td bgcolor="#f4f4f4" style="font-family: verdana, helvetica, arial, sans-serif; text-align: left; padding-top: 12px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px" class="noarchive">
+<p style="line-height: 15px; font-size: 11px; margin-top: 0">Curated by <a target="_blank" href="http://twitter.com/peterc" style="color: #0081b5">Peter Cooper</a> and published by <a target="_blank" href="https://cooperpress.com/" style="color: #0081b5">Cooper Press</a>.</p>
+<p style="font-size: 13px"><a target="_blank" href="*%7CUNSUB%7C*" style="color: #0081b5">Stop getting JavaScript Weekly</a> : <a target="_blank" href="*%7CUPDATE_PROFILE%7C*" style="color: #0081b5">Change email address</a> : <a target="_blank" href="http://javascriptweekly.com/issues/306" style="color: #0081b5">Read this issue on the Web</a></p>
+<p style="font-size: 11px; line-height: 15px">© Cooper Press Ltd. Office 30, Lincoln Way, Louth, LN11 0LS, UK</p>
+</td></tr>
+</table>
+</td></tr></table></div>
+
+<!-- 
+	0,"JavaScript Gets Its Own Foundation",,0.0
+	1,"An ES Proposal: Asynchronous Iteration",,0.0
+	2,"Node.js v6 Transitions to LTS",,0.0
+	3,"MySQL on Compose - hosted on AWS, GCP or SoftLayer",,0.0
+	4,"The ECMAScript 2016 Change You Probably Don't Know",,0.0
+	5,"Angular 2 Form Fundamentals: Reactive Forms",,0.0
+	6,"Yarn vs npm: Everything You Need to Know",,0.0
+	7,"Replacing jQuery's ready() with Plain JavaScript",,0.0
+	8,"Promote Your Job to 106,403 JavaScript Weekly Readers",,0.0
+	9,"Find Your Perfect Fit - Try Hired",,0.0
+	10,"The Linux Foundation Unites JavaScript Community for Open Web Development",,0.0
+	11,"A Quick Review of New Features in Angular 2.1",,0.0
+	12,"Ember.js 2.8-LTS, 2.9 and 2.10 Beta Released",,0.0
+	13,"Facebook Wants Your Input for JSX 2.0",,0.0
+	14,"Angular 1.x Banned From Use in Firefox Addons",,0.0
+	15,"Chrome Dev Summit 2016",,0.0
+	16,"A Practical Introduction to ES6 Generator Functions",,0.0
+	17,"Some Simple ES6 Syntax Tricks",,0.0
+	18,"How to Create Your Own TypeScript Type Definition Files (.d.ts)",,0.0
+	19,"A Visual Guide to State in React",,0.0
+	20,"Experimenting with async/await in Node.js 7 Nightly",,0.0
+	21,"JavaScript for Web Designers: DOM Scripting",,0.0
+	22,"Using Yarn with Docker",,0.0
+	23,"Searching JavaScript Arrays Efficiently with includes and indexOf",,0.0
+	24,"Building a 3D Minecraft-Style Editor in JavaScript",,0.0
+	25,"Ember and Rails 5 with JSON API: A Modern Bridge",,0.0
+	26,"Medium-Like Image Loading with Vue.js",,0.0
+	27,"Polymer Summit 2016: Recordings of All Talks Are Now Available",,0.0
+	28,"Is MVC Dead for The Frontend?",,0.0
+	29,"Why You Shouldn’t Use ‘var’ Anymore",,0.0
+	30,"Debugging JS errors in production",,0.0
+	31,"Faltu: Search Sort, Filter, and Limit An Array of Objects in MongoDB-esque Style",,0.0
+	32,"Vivus.js: Bring SVGs to Life by 'Drawing' Them via Animations",,0.0
+	33,"meSing.js: JavaScript Singing Synthesis Library",,0.0-->
+
+<div class="subscribe_box" class="">
+<form class="subscribe" action="/subscribe" method="POST">
+  <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+  <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+  <input type="hidden" name="_csrf" value="6QFMLAyqOc0k0aG1OkzbDqkdVTaSOiuqV5kXYiaKVkY=" />
+</form>
+</div>
+
+<div class="strap"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe</a><br />Published by <a href="https://cooperpress.com/">Cooper Press</a> and curated by <a href="http://twitter.com/peterc">Peter Cooper</a></div>
+</main>
+    <footer>
+</footer>
+  </div>
+
+  <div id="border-b"></div>
+  <script src="/assets/app-6a8b9c037c77af65e5e71738cc958975.js"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-2237791-21', 'javascriptweekly.com');
+  ga('send', 'pageview');
+  </script>
+  
+</body>
+</html>

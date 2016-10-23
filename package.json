@@ -1,0 +1,48 @@
+{
+  "directories": {
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "extract-links-mail-magazine",
+  "version": "1.0.0",
+  "description": "Extract link in mail magazine like JavaScript Weekly.",
+  "main": "lib/extract-links-mail-magazine.js",
+  "scripts": {
+    "test": "mocha test/",
+    "build": "NODE_ENV=production babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish": "npm run --if-present build"
+  },
+  "keywords": [
+    "mail",
+    "link.scrape"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/extract-links-mail-magazine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azu/extract-links-mail-magazine/issues"
+  },
+  "homepage": "https://github.com/azu/extract-links-mail-magazine",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-jsdoc-to-assert": "^4.0.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-register": "^6.16.3",
+    "jsdom": "^9.8.0",
+    "mocha": "^3.1.2",
+    "power-assert": "^1.4.1"
+  },
+  "dependencies": {
+    "array-unique": "^0.3.2",
+    "strip-utm": "^1.0.0"
+  }
+}
