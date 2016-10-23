@@ -10,6 +10,12 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
+### CLI
+
+    extract-links-mail-magazine "http://javascriptweekly.com/issues/306"
+
+### Node.js
+
 E.g.) Extract link from [JavaScript Weekly Issue 306: October 20, 2016](http://javascriptweekly.com/issues/306 "JavaScript Weekly Issue 306: October 20, 2016")
 
 In node.js 
